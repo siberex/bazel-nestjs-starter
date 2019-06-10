@@ -17,4 +17,11 @@ Basically, this is a scaffold of Nest app merged with scaffold of [rules_nodejs]
 
 # Build and run
 
+With Bazel installed:
+
     bazel run //src:server
+
+Without Bazel installed:
+
+    yarn install -D
+    yarn bazel:run
