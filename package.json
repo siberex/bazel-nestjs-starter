@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "bazel:build": "bazel build //src:app",
-    "bazel:build": "bazel build //src:app",
+    "bazel:run": "bazel run //src:server",
     "bazel:test": "bazel test //...",
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
