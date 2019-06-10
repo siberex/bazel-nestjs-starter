@@ -2,6 +2,10 @@
 /dist
 /node_modules
 
+# Bazel
+bazel-*
+.bazelrc.user
+
 # Logs
 logs
 *.log

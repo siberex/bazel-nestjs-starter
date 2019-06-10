@@ -1,6 +1,7 @@
 {
   "name": "nest-bazel-example",
   "version": "0.0.1",
+  "private": true,
   "description": "",
   "author": "",
   "license": "MIT",
@@ -28,6 +29,10 @@
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
+    "@bazel/bazel": "latest",
+    "@bazel/ibazel": "latest",
+    "@bazel/buildifier": "latest",
+    "@bazel/typescript": "latest",
     "@nestjs/testing": "^6.0.0",
     "@types/express": "^4.16.0",
     "@types/jest": "^23.3.13",
