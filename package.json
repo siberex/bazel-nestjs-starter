@@ -6,6 +6,9 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "bazel:build": "bazel build //src:app",
+    "bazel:build": "bazel build //src:app",
+    "bazel:test": "bazel test //...",
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
