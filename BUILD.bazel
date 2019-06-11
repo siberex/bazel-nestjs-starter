@@ -7,7 +7,4 @@
 #   See https://www.npmjs.com/package/@bazel/typescript#installation
 package(default_visibility = ["//:__subpackages__"])
 
-alias(
-    name = "tsconfig.json",
-    actual = "tsconfig.bazel.json",
-)
+exports_files(["tsconfig.json"])

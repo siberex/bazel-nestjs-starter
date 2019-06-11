@@ -10,13 +10,10 @@ ts_library(
         include = ["**/*.ts"],
         exclude = ["**/*spec.ts"],
     ),
-    # NB: Coarse Node dependencies
-    # https://github.com/bazelbuild/bazel/issues/5153
-    node_modules = "@npm//:node_modules",
-    module_name = "nest_bazel_example",
     deps = [
         "@npm//@nestjs",
         "@npm//@types",
+        "@npm//tslib",
     ],
 )
 

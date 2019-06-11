@@ -9,7 +9,9 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "lib": ["es2018"],
+    "importHelpers": true
   },
   "exclude": ["node_modules"]
 }
