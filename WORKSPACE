@@ -14,12 +14,10 @@ workspace(
 # This provides the basic tools for running and packaging nodejs programs in Bazel
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-RULES_NODEJS_VERSION = "0.31.1"
-RULES_NODEJS_SHA256 = "e04a82a72146bfbca2d0575947daa60fda1878c8d3a3afe868a8ec39a6b968bb"
 http_archive(
     name = "build_bazel_rules_nodejs",
-    sha256 = RULES_NODEJS_SHA256,
-    url = "https://github.com/bazelbuild/rules_nodejs/releases/download/%s/rules_nodejs-%s.tar.gz" % (RULES_NODEJS_VERSION, RULES_NODEJS_VERSION),
+    sha256 = "e04a82a72146bfbca2d0575947daa60fda1878c8d3a3afe868a8ec39a6b968bb",
+    urls = ["https://github.com/bazelbuild/rules_nodejs/releases/download/0.31.1/rules_nodejs-0.31.1.tar.gz"],
 )
 
 # Setup the Node.js toolchain
