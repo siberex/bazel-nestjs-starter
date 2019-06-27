@@ -10,7 +10,7 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "lib": ["es2018"],
+    "lib": ["dom", "es2018"],
     "importHelpers": true
   },
   "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
