@@ -25,3 +25,14 @@ Without Bazel installed:
 
     yarn install -D
     yarn bazel:run
+
+
+# Docker
+
+Build Docker image:
+
+    bazel build //src:docker
+
+Push image to the registry (currently set to `gcr.io`):
+
+    bazel run --define push_tag=${IMAGE_TAG} --define push_repository=${REPOSITORY} //src:push_container
