@@ -34,7 +34,7 @@
     "@bazel/bazel": "latest",
     "@bazel/buildifier": "latest",
     "@bazel/ibazel": "latest",
-    "@bazel/typescript": "latest",
+    "@bazel/typescript": "0.32.2",
     "@nestjs/testing": "^6.0.0",
     "@types/express": "^4.16.0",
     "@types/jest": "^23.3.13",
