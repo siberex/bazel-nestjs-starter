@@ -55,18 +55,21 @@ install_bazel_dependencies()
 # Download the rules_docker repository
 http_archive(
     name = "io_bazel_rules_docker",
-    sha256 = "aed1c249d4ec8f703edddf35cbe9dfaca0b5f5ea6e4cd9e83e99f3b0d1136c3d",
-    strip_prefix = "rules_docker-0.7.0",
-    urls = ["https://github.com/bazelbuild/rules_docker/archive/v0.7.0.tar.gz"],
+    sha256 = "3556d4972571f288f8c43378295d84ed64fef5b1a875211ee1046f9f6b4258fa",
+    strip_prefix = "rules_docker-0.8.0",
+    urls = ["https://github.com/bazelbuild/rules_docker/archive/v0.8.0.tar.gz"],
 )
 
-# This is required for extracting transitive dependency defs:
-# https://github.com/bazelbuild/rules_docker/releases/tag/v0.7.0
-load(
-    "@io_bazel_rules_docker//repositories:repositories.bzl",
-    container_repositories = "repositories",
+http_archive(
+    name = "io_bazel_rules_go",
+    urls = [
+        "https://storage.googleapis.com/bazel-mirror/github.com/bazelbuild/rules_go/releases/download/0.18.6/rules_go-0.18.6.tar.gz",
+        "https://github.com/bazelbuild/rules_go/releases/download/0.18.6/rules_go-0.18.6.tar.gz",
+    ],
+    sha256 = "f04d2373bcaf8aa09bccb08a98a57e721306c8f6043a2a0ee610fd6853dcde3d",
 )
-container_repositories()
+load("@io_bazel_rules_go//go:deps.bzl", "go_rules_dependencies")
+go_rules_dependencies()
 
 # Download base image for nodejs
 load(
