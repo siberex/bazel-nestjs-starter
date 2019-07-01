@@ -46,6 +46,8 @@ yarn_install(
     name = "npm",
     package_json = "//:package.json",
     yarn_lock = "//:yarn.lock",
+    # https://bazelbuild.github.io/rules_nodejs/npm_install/npm_install.html#npm_install.always_hide_bazel_files
+    always_hide_bazel_files = True,
 )
 
 # Install any Bazel rules which were extracted earlier by the yarn_install rule.
