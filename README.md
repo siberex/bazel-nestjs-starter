@@ -49,7 +49,10 @@ bazel run --define push_tag=${IMAGE_TAG} --define push_repository=${REPOSITORY} 
 Created by [@siberex](https://github.com/siberex/) @ [Scalio](https://scal.io/)
 
 <!-- markdownlint-disable -->
-<p style="text-align:center; margin-top:100px">
+<p align="center">
+    <br/>
+    <br/>
+    <br/>
     <a href="https://scal.io/">
         <img src="readme-assets/scalio.png"/>
     </a>
