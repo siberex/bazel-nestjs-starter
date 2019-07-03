@@ -51,6 +51,10 @@ query --experimental_allow_incremental_repository_updates
 build --incompatible_strict_action_env
 run --incompatible_strict_action_env
 
+# https://github.com/bazelbuild/bazel/issues/7899
+# Note that container_push targets may fail without it
+build --host_force_python=PY2
+
 # Load any settings specific to the current user.
 # .bazelrc.user should appear in .gitignore so that settings are not shared with team members
 # This needs to be last statement in this
