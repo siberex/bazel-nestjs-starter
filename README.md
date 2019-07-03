@@ -1,38 +1,57 @@
-# Nest Bazel example
+# Nest Bazel Starter
 
-Example of [Bazel](https://bazel.build/) build configuration for [NestJS](https://nestjs.com/) app.
+This repository showcases the use of [Bazel](https://bazel.build/) to build a simple [NestJS](https://nestjs.com/) app.
 
-# Introduction
+## Overview
 
-Basically, this is a scaffold of Nest app merged with scaffold of [rules_nodejs](https://github.com/bazelbuild/rules_nodejs/#quickstart):
+This project was created by invoking the default Nest app scaffold via the Nest CLI, and then the addition of simple `BUILD.bazel` and `WORKSPACE` files, making use of [rules_nodejs](https://github.com/bazelbuild/rules_nodejs/#quickstart).
 
-    nest new AppName
-    
-\+
+To create this from scratch in a new project, run the following:
 
-    yarn create @bazel APP_NAME --packageManager=yarn --typescript 
+```bash
+nest new AppName
+yarn create @bazel APP_NAME --packageManager=yarn --typescript
+```
 
-\+ added `src/BUILD.bazel`
+and now add the files `WORKSPACE` and `src/BUILD.bazel` to your new directory root and `src` folders, respectively.
 
-
-# Build and run
+## Build and run
 
 With Bazel installed:
 
-    bazel run //src:server
+```bash
+bazel run //src:server
+```
 
 Without Bazel installed:
 
-    yarn install -D
-    yarn bazel:run
+```bash
+yarn install -D
+yarn bazel:run
+```
 
-
-# Docker
+## Docker
 
 Build Docker image:
 
-    bazel build //src:docker
+```bash
+bazel build //src:docker
+```
 
 Push image to the registry (currently set to `gcr.io`):
 
-    bazel run --define push_tag=${IMAGE_TAG} --define push_repository=${REPOSITORY} //src:push_container
+```bash
+bazel run --define push_tag=${IMAGE_TAG} --define push_repository=${REPOSITORY} //src:push_container
+```
+
+## Credits
+
+Created by [@siberex](https://github.com/siberex/) @ [Scalio](https://scal.io/)
+
+<!-- markdownlint-disable -->
+<p style="text-align:center; margin-top:100px">
+    <a href="https://scal.io/">
+        <img src="readme-assets/scalio.png"/>
+    </a>
+</p>
+<!-- markdownlint-restore -->
