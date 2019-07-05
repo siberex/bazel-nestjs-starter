@@ -170,7 +170,7 @@
   resolved "https://registry.yarnpkg.com/@bazel/buildifier-win32_x64/-/buildifier-win32_x64-0.26.0.tgz#51d983d36fd41f59063347e027487a447e4ea83e"
   integrity sha512-S3QvjopF6cQ0rMv8zxi/SWfRBtA+oBGiTPcfpn1wJZa8Q21PdOcjH9ZgPJKpIV53x6sJ8XBVs7HSW44dPrwxQA==
 
-"@bazel/buildifier@0.26.0":
+"@bazel/buildifier@latest":
   version "0.26.0"
   resolved "https://registry.yarnpkg.com/@bazel/buildifier/-/buildifier-0.26.0.tgz#65af3851f9ebe8b9ac651185d051b1a155012dbb"
   integrity sha512-PVzkCOYhjlgcRCXUO31dy/GmtjDWzeTyVmPCFc4pxTFBvlrG7qkVlUW3DCIbBI5neTes0pY8mju837UBdK0OFQ==
@@ -4839,10 +4839,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.3.tgz#0eb320e4ace9b10eadf5bc6103286b0f8b7c224f"
-  integrity sha512-FFgHdPt4T/duxx6Ndf7hwgMZZjZpB+U0nMNGVCYPq0rEzWKjEDobm4J6yb3CS7naZ0yURFqdw9Gwc7UOh/P9oQ==
+typescript@3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
+  integrity sha512-YycBxUb49UUhdNMU5aJ7z5Ej2XGmaIBL0x34vZ82fn3hGvD+bgrMrVDpatgz2f7YxUMJxMkbWxJZeAvDxVe7Vw==
 
 uglify-js@^3.1.4:
   version "3.6.0"
