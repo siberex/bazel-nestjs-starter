@@ -9,7 +9,6 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true,
     "lib": ["dom", "es2018"],
     "importHelpers": true
   },
