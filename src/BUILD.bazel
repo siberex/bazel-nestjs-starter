@@ -31,12 +31,9 @@ nodejs_binary(
     node_modules = "@npm//:node_modules",
 )
 
-# Note it will not cross-compile on Mac OS to linux:
-# https://github.com/bazelbuild/rules_nodejs/issues/396
-# https://github.com/bazelbuild/rules_nodejs/pull/827
 load("@io_bazel_rules_docker//nodejs:image.bzl", "nodejs_image")
 
-# bazel build //src:docker
+# bazel build --platforms=@build_bazel_rules_nodejs//toolchains/node:linux_amd64 //src:docker
 nodejs_image(
     name = "docker",
     data = [
