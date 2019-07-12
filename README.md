@@ -35,7 +35,7 @@ yarn bazel:run
 Build Docker image:
 
 ```bash
-bazel build //src:docker
+bazel build --platforms=@build_bazel_rules_nodejs//toolchains/node:linux_amd64 //src:docker
 ```
 
 Push image to the registry (currently set to `gcr.io`):
