@@ -34,10 +34,10 @@ node_repositories(
     node_version = "12.6.0",
     package_json = ["//:package.json"],
     yarn_repositories = {
-        "1.16.0": ("yarn-v1.16.0.tar.gz", "yarn-v1.16.0", "df202627d9a70cf09ef2fb11cb298cb619db1b958590959d6f6e571b50656029"),
+        "1.17.3": ("yarn-v1.17.3.tar.gz", "yarn-v1.17.3", "e3835194409f1b3afa1c62ca82f561f1c29d26580c9e220c36866317e043c6f3"),
     },
     yarn_urls = ["https://github.com/yarnpkg/yarn/releases/download/v{version}/{filename}"],
-    yarn_version = "1.16.0",
+    yarn_version = "1.17.3",
 )
 
 # The yarn_install rule runs yarn anytime the package.json or yarn.lock file changes.
