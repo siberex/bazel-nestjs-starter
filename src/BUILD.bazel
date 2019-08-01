@@ -24,24 +24,28 @@ nodejs_binary(
     name = "server",
     data = [
         ":app",
+        "@npm//@nestjs/common",
+        "@npm//@nestjs/core",
+        "@npm//@nestjs/platform-express",
     ],
     # entry_point defined as label:
     # https://github.com/bazelbuild/rules_nodejs/releases/tag/0.31.1
     entry_point = ":main.ts",
-    node_modules = "@npm//:node_modules",
 )
 
 load("@io_bazel_rules_docker//nodejs:image.bzl", "nodejs_image")
 
 # bazel build --platforms=@build_bazel_rules_nodejs//toolchains/node:linux_amd64 //src:docker
+# docker import dist/bin/src/docker-layer.tar
 nodejs_image(
     name = "docker",
     data = [
         ":app",
+        "@npm//@nestjs/common",
+        "@npm//@nestjs/core",
+        "@npm//@nestjs/platform-express",
     ],
     entry_point = ":main.ts",
-    # This will be put into its own layer.
-    node_modules = "@npm//:node_modules",
 )
 
 load("@io_bazel_rules_docker//container:container.bzl", "container_push")
