@@ -1,4 +1,4 @@
-# Nest Bazel Starter
+# Bazel NestJS Starter
 
 This repository showcases the use of [Bazel](https://bazel.build/) to build a simple [NestJS](https://nestjs.com/) app.
 
