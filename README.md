@@ -3,7 +3,7 @@
 <h1 align="center">Bazel Nest Starter</h1>
 
 <p align="center">
-  A starter app written in <a href="https://nestjs.com/">NestJS</a> -- built <b>using <a href="https://bazel.build/">Bazel</a></b>
+  A starter app written in Typescript for <a href="https://nestjs.com/">NestJS</a> -- built <b>using <a href="https://bazel.build/">Bazel</a></b>
 </p>
 
 &nbsp;
