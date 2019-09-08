@@ -38,7 +38,7 @@
     "@bazel/bazel": "latest",
     "@bazel/buildifier": "latest",
     "@bazel/ibazel": "latest",
-    "@bazel/typescript": "0.36.0",
+    "@bazel/typescript": "0.37.0",
     "@nestjs/testing": "^6.5.3",
     "@types/express": "^4.16.0",
     "@types/jest": "^24.0.18",
