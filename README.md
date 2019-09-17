@@ -1,7 +1,12 @@
-# Nest Bazel Starter
+![Bazel at Scalio](https://raw.githubusercontent.com/scalio/bazel-status/master/assets/scalio-bn.svg?sanitize=true)
 
-This repository showcases the use of [Bazel](https://bazel.build/) to build a simple [NestJS](https://nestjs.com/) app.
+<h1 align="center">Bazel Nest Starter</h1>
 
+<p align="center">
+  A starter app written in Typescript for <a href="https://nestjs.com/">NestJS</a> -- built <b>using <a href="https://bazel.build/">Bazel</a></b>
+</p>
+
+&nbsp;
 ## Overview
 
 This project was created by invoking the default Nest app scaffold via the Nest CLI, and then the addition of simple `BUILD.bazel` and `WORKSPACE` files, making use of [rules_nodejs](https://github.com/bazelbuild/rules_nodejs/#quickstart).
@@ -48,13 +53,12 @@ bazel run --define push_tag=${IMAGE_TAG} --define push_repository=${REPOSITORY} 
 
 Created by [@siberex](https://github.com/siberex/) @ [Scalio](https://scal.io/)
 
-<!-- markdownlint-disable -->
+
+## About us
 <p align="center">
     <br/>
-    <br/>
-    <br/>
     <a href="https://scal.io/">
-        <img src="readme-assets/scalio.png"/>
+        <img src="https://raw.githubusercontent.com/scalio/bazel-status/master/assets/scalio-logo.svg?sanitize=true" />
     </a>
+    <br/>
 </p>
-<!-- markdownlint-restore -->
