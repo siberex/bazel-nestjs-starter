@@ -412,14 +412,14 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@nestjs/common@^6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.5.3.tgz#25a3916b53f1e681640641bdb96a40bb37a15515"
-  integrity sha512-8d39grIMrUYGKM46BFWxB6csQFCu1S2aK7azPivg7gTRVSbvR84cVd6tgRVM0LwFpqQrtn3Q6G6Pa8FSk7Kh1w==
+"@nestjs/common@^6.7.1":
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.7.1.tgz#a3ec48d0f82556f5779dac1c278633c206ee97a6"
+  integrity sha512-3g4XqXmQxi+jjdi1ieoErwNjj1MbjxUumXug2xbF0Qkc1P+IkBNNktaBFTNRPHx6Se4qIcxj7p1vv6mAX6jAYQ==
   dependencies:
     axios "0.19.0"
     cli-color "1.4.0"
-    uuid "3.3.2"
+    uuid "3.3.3"
 
 "@nestjs/core@^6.7.1":
   version "6.7.1"
@@ -5026,11 +5026,6 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
-
-uuid@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
-  integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
 uuid@3.3.3, uuid@^3.3.2:
   version "3.3.3"
