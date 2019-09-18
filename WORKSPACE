@@ -26,12 +26,12 @@ load("@build_bazel_rules_nodejs//:defs.bzl", "node_repositories", "yarn_install"
 node_repositories(
     # https://github.com/bazelbuild/rules_nodejs/blob/master/internal/node/node_repositories.bzl
     node_repositories = {
-        "12.6.0-darwin_amd64": ("node-v12.6.0-darwin-x64.tar.gz", "node-v12.6.0-darwin-x64", "004b7992a2621eb35a47c94d258510ca5744b5a8072364f235dc7e3d4bff7457"),
-        "12.6.0-linux_amd64": ("node-v12.6.0-linux-x64.tar.xz", "node-v12.6.0-linux-x64", "1ac14567e2be5562df209900e28430bd11575d985a85e8a6df2743428570de33"),
-        "12.6.0-windows_amd64": ("node-v12.6.0-win-x64.zip", "node-v12.6.0-win-x64", "0c5ac670c5bb0ea0d389bb7269cb84104702826f791a1d057eae02cdb9eed717"),
+        "12.10.0-darwin_amd64": ("node-v12.10.0-darwin-x64.tar.gz", "node-v12.10.0-darwin-x64", "4c16d1f6454f5dc3977ad00cea123792b8d4e1d6d1bf42bbc82a4202039a5971"),
+        "12.10.0-linux_amd64": ("node-v12.10.0-linux-x64.tar.xz", "node-v12.10.0-linux-x64", "e8d2e6b62dd8183dc59a139a9ca3edc7c419a0d3d92e90fea9cb0ad52489843a"),
+        "12.10.0-windows_amd64": ("node-v12.10.0-win-x64.zip", "node-v12.10.0-win-x64", "de341476711c71f82d06fabcc9874c1ff9e865fd7274334d64a67b1e31a53fd0"),
     },
     node_urls = ["https://nodejs.org/dist/v{version}/{filename}"],
-    node_version = "12.6.0",
+    node_version = "12.10.0",
     package_json = ["//:package.json"],
     yarn_repositories = {
         "1.17.3": ("yarn-v1.17.3.tar.gz", "yarn-v1.17.3", "e3835194409f1b3afa1c62ca82f561f1c29d26580c9e220c36866317e043c6f3"),
