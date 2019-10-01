@@ -412,10 +412,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@nestjs/common@^6.7.2":
-  version "6.7.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.7.2.tgz#4485539992a7aa6824e1993ed20d74159eeaf645"
-  integrity sha512-ASwS8tCSnHRVUFmERfnTKPLR3MLGsrDd+LYVOjwvXtNBPOJ2rBleZqCQrPh+UxGvygzBHH0Dn3Q+60br5kEvjQ==
+"@nestjs/common@^6.8.0":
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.8.0.tgz#b353d07ca6e659899b6bf50e1d2137791424042e"
+  integrity sha512-YNRrlk6VTSDGp/TvrBYZvGx1SQ5l7lF7WYg9O2t+rDS4PtqV73gRNhBIFpelYuMrNkgkc38hHlFxtzPZkaUaMg==
   dependencies:
     axios "0.19.0"
     cli-color "1.4.0"
