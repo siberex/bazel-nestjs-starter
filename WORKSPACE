@@ -21,7 +21,7 @@ http_archive(
 )
 
 # Setup the Node.js toolchain
-load("@build_bazel_rules_nodejs//:defs.bzl", "node_repositories", "yarn_install")
+load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "yarn_install")
 
 node_repositories(
     # https://github.com/bazelbuild/rules_nodejs/blob/master/internal/node/node_repositories.bzl
