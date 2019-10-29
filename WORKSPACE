@@ -26,18 +26,18 @@ load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "yarn_install
 node_repositories(
     # https://github.com/bazelbuild/rules_nodejs/blob/master/internal/node/node_repositories.bzl
     node_repositories = {
-        "12.10.0-darwin_amd64": ("node-v12.10.0-darwin-x64.tar.gz", "node-v12.10.0-darwin-x64", "4c16d1f6454f5dc3977ad00cea123792b8d4e1d6d1bf42bbc82a4202039a5971"),
-        "12.10.0-linux_amd64": ("node-v12.10.0-linux-x64.tar.xz", "node-v12.10.0-linux-x64", "e8d2e6b62dd8183dc59a139a9ca3edc7c419a0d3d92e90fea9cb0ad52489843a"),
-        "12.10.0-windows_amd64": ("node-v12.10.0-win-x64.zip", "node-v12.10.0-win-x64", "de341476711c71f82d06fabcc9874c1ff9e865fd7274334d64a67b1e31a53fd0"),
+        "12.13.0-darwin_amd64": ("node-v12.13.0-darwin-x64.tar.gz", "node-v12.13.0-darwin-x64", "49a7374670a111b033ce16611b20fd1aafd3296bbc662b184fe8fb26a29c22cc"),
+        "12.13.0-linux_amd64": ("node-v12.13.0-linux-x64.tar.xz", "node-v12.13.0-linux-x64", "7a57ef2cb3036d7eacd50ae7ba07245a28336a93652641c065f747adb2a356d9"),
+        "12.13.0-windows_amd64": ("node-v12.13.0-win-x64.zip", "node-v12.13.0-win-x64", "6f920cebeecb4957b4ef0def6d9b04c49d4582864f8d1a207ce8d0665865781a"),
     },
     node_urls = ["https://nodejs.org/dist/v{version}/{filename}"],
-    node_version = "12.10.0",
+    node_version = "12.13.0",
     package_json = ["//:package.json"],
     yarn_repositories = {
-        "1.17.3": ("yarn-v1.17.3.tar.gz", "yarn-v1.17.3", "e3835194409f1b3afa1c62ca82f561f1c29d26580c9e220c36866317e043c6f3"),
+        "1.19.1": ("yarn-v1.19.1.tar.gz", "yarn-v1.19.1", "34293da6266f2aae9690d59c2d764056053ff7eebc56b80b8df05010c3da9343"),
     },
     yarn_urls = ["https://github.com/yarnpkg/yarn/releases/download/v{version}/{filename}"],
-    yarn_version = "1.17.3",
+    yarn_version = "1.19.1",
 )
 
 # The yarn_install rule runs yarn anytime the package.json or yarn.lock file changes.
