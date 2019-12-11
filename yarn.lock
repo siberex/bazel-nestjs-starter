@@ -442,10 +442,10 @@
     express "4.17.1"
     multer "1.4.2"
 
-"@nestjs/testing@^6.10.7":
-  version "6.10.7"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.10.7.tgz#0e7d782a951c5c8e9b39a8796eb645c831c9a2a6"
-  integrity sha512-ZlhcBTKmo9F+iw/v6fo60ZxnPqonE5XNY+lOhwpe1Dvq+jOFUmLq7b0tI8tInueeoFYnjToFPJUz4p+ErVMw1Q==
+"@nestjs/testing@^6.10.10":
+  version "6.10.10"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.10.10.tgz#f16f13bd2c904cd374db58c981ab94bee0d286fe"
+  integrity sha512-dusjypkEyiqaQiA4zReb3dE9SGDjkgtOozJXVG12MyUHtKwDkD/ok5dAzynqgbhVIiykIzozUwUPOjauMstTxA==
   dependencies:
     optional "0.1.4"
 
