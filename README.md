@@ -1,4 +1,4 @@
-![Bazel at Scalio](https://raw.githubusercontent.com/scalio/bazel-status/master/assets/scalio-bn.svg?sanitize=true)
+![Bazel at Scalio](https://raw.githubusercontent.com/scalio/bazel/master/assets/scalio-bn.svg?sanitize=true)
 
 <h1 align="center">Bazel Nest Starter</h1>
 
