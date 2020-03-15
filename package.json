@@ -39,7 +39,7 @@
     "@bazel/buildifier": "latest",
     "@bazel/ibazel": "latest",
     "@bazel/typescript": "1.0.0",
-    "@nestjs/testing": "^6.10.12",
+    "@nestjs/testing": "^7.0.0",
     "@types/express": "^4.17.2",
     "@types/jest": "^24.0.24",
     "@types/node": "^12.12.21",
